@@ -5,7 +5,8 @@ build_container:
 ifeq ($(DOCKER_CHECK), 0)
 	@echo "Docker is installed, building image..."
 	docker build -t openjl:latest ./
-	docker run --mount type=bind,source=./,target=/archiso --cap-add=SYS_ADMIN openjl:latest
+	docker run --rm --mount type=bind,source=./,target=/archiso --cap-add=SYS_ADMIN openjl:latest
+	docker rmi openjl:latest
 else
 	$(error "Docker is not installed. Please install Docker and try again.")
 endif
