@@ -1,0 +1,12 @@
+NAME="OpenJL"
+PRETTY_NAME="OpenJL"
+ID=arch
+BUILD_ID=rolling
+VERSION_ID=20240101.0.204074
+ANSI_COLOR="38;2;255;255;0"
+HOME_URL="https://github.com/xotakfr/OpenJL"
+DOCUMENTATION_URL="https://wiki.archlinux.org/"
+SUPPORT_URL=""
+BUG_REPORT_URL="https://github.com/xotakfr/OpenJL/issues/"
+PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+LOGO=archlinux-logo
