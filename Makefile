@@ -18,3 +18,12 @@ ifeq ($(ARCHISO_CHECK), 0)
 else
 	$(error "Archiso is not installed. Please install Archiso and try again, or try building it in using the container if you are not using Arch Linux or derivatives.")
 endif
+
+clean:
+ifeq ($(shell id -u), 0)
+	@echo "Removing work and out"
+	rm -rf ./work
+	rm -rf ./out
+else
+	$(error "You must be root to perform this action. Run 'sudo make clean' instead.")
+endif
